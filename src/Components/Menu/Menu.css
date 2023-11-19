@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 88%, rgba(203, 203, 204, 1) 100%);
+}
+
+.left-aside {
+    float: left;
+    width: 400px; 
+    border-right: 1px solid rgba(190, 190, 187, 0.92);
+}
+
+.right-aside {
+    float: right;
+    width: 400px; 
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin: 30px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+li i{
+    margin-right: 10px;
+}
+
+.Link-name{
+    font-size: 16px; 
+    margin: 10px 0;
+}
+
+.Link-name a,
+.Order a,
+.Rewards a,
+.Credit a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+.list a {
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+    list-style: none;
+}
+
+/* Avatar styling */
+.avatar {
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.list__link {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.account {
+    margin: 10px;
+}
+
+.account li {
+    margin-bottom: 10px;
+    width: 80%;
+    font-size: 18px;
+    text-decoration: none;
+}
+.gift{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.gift li {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Flex layout for certain elements */
+.Personal
+{
+    display: flex;
+}
+
+.Personal {
+    align-items: center;
+}
+
+.information{
+    margin: 0px;
+}
+
+/* Hover effect on links */
+.list a,
+.Manage-account a,
+.account li a,
+.gift li a,
+.information a,
+.Link-name a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 7px;
+}
+
+.list a::before,
+.Manage-account a::before,
+.account li a::before,
+.gift li a::before,
+.information a::before,
+.Link-name a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.list a:hover::before,
+.Manage-account a:hover::before,
+.account li a:hover::before,
+.gift li a:hover::before,
+.information a:hover::before,
+.Link-name a:hover::before {
+    width: 100%;
+}
+
+.order__history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.points__rewards,
+.CreditCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_1,
+.title_2,
+.title_3 {
+    border: 1px solid rgba(190, 190, 187, 0.92);
+    background-color: rgba(195, 187, 191, 0.8);
+    padding: 2px;
+    width: 500px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.title_1 i.fa-angle-right {
+    margin-left: 370px; 
+}
+.title_2 i.fa-angle-right {
+    margin-left: 300px; 
+}
+.title_3 i.fa-angle-right {
+    margin-left: 270px; 
+}
+
+.order__description,
+.creditcard__description {
+    border: 1px solid rgb(206, 190, 190);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px;
+    width: 504px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creditcard__description p{
+    font-size: 14px;
+}
+
+.order__history h2 {
+    margin: 0;
+}
+
+.Arrow {
+    margin-left: 350px;
+}
+
+.Arrow2 {
+    margin-left: 250px;
+}
+
+.rewards__available {
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.reward__description {
+    border: 1px solid gray;
+    margin-top: 0px;
+    width: 500px;
+}
+
+.reward__description p {
+    margin-left: 30px;
+}
+
+.rewards__available p {
+    margin-left: 0px;
+}
+
+.money__avatar {
+    background-color: rgb(129, 113, 113);
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.creditcard__description {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
